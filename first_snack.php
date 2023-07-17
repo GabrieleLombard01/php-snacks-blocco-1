@@ -66,7 +66,12 @@ $matches = [
 </head>
 
 <body>
-
+    <h1>Matches calendar:</h1>
+    <ul>
+        <?php foreach ($matches as $match) : ?>
+            <li></li>
+        <?php endforeach ?>
+    </ul>
 </body>
 
 </html>
