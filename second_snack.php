@@ -15,6 +15,15 @@ $age = $_GET['age'] ?? '';
 
 <body>
 
+    <span>Result:</span>
+    <?php if (!strlen($name) > 3 || !str_contains($email, '.') || !str_contains($email, '@') || is_nan($age)) : ?>
+        <span style="color: red;"><strong>Not allowed</strong></span>
+    <?php else : ?>
+        <span style="color: green;">Login successful</span>
+        <?= $name ?>
+        <?= $email ?>
+        <?= $age ?>
+    <?php endif ?>
 </body>
 
 </html>
