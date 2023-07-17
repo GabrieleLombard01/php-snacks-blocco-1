@@ -69,7 +69,7 @@ $matches = [
     <h1>Matches calendar:</h1>
     <ul>
         <?php foreach ($matches as $match) : ?>
-            <li></li>
+            <li><?= $match['team-home']['name'] ?> - <?= $match['team-away']['name'] ?> | <?= $match['team-home']['points'] ?> - <?= $match['team-away']['points'] ?></li>
         <?php endforeach ?>
     </ul>
 </body>
